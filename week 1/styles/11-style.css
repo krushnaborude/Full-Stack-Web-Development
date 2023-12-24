@@ -1,0 +1,60 @@
+
+/* Element Selector: Specify the name of an element */
+h1 {
+    font-family: Georgia;
+    color: violet;
+}
+
+/* ID Selector: Specify the id of an element. Use the # symbol to specify the id here*/
+#para2 {
+    font-family: 'Trebuchet MS';
+    color:chocolate
+} 
+
+/* Class Selector: Specify the class of an element. Use the "." symbol to specify the class here */
+.myclass{
+    font-family: cursive;
+    color: greenyellow;
+    background-color: black;
+}
+
+p.myclass {
+    font-size: x-large;
+}
+
+/* Group Selector: Specify multiple elements as a group */
+h3, h4 {
+    color:blueviolet;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Universal Selector */
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+}
+
+/* Combinator Selector: Select all p elements which are inside a div element */
+div p {
+    color: chartreuse;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* Pseudo class */
+
+button:hover {
+    color: red;
+}
+
+a:link {
+    color :coral;
+} 
+
+/* ------------------------------------------------------------------------------- */
+/* Pseudo elements */
+
+p::first-line, div::first-line {
+    color: teal;
+    text-transform: uppercase;
+}
+

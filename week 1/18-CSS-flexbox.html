@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Flexbox</title>
+
+    <style>
+
+/* 
+        Properties can be set on the followin:
+        1) Flex Container:
+            flex-direction: row/column;
+            justify-content: center; -> Controls the alignment of the items on the main axis
+            align-items: center; -> Controls the alignment of the item on the cross axis
+            flex-wrap: wrap; -> To make it responsive
+
+        2) Flex Item: 
+            order: 5; -> Item with max order will display at end. (Min first, Max last)
+            flex-grow: 3; -> It will grow to use the available space
+            flex-shrink: 2; -> It will shrink when the size is small 
+            align-self: flex-end; -> Controls the individial alignment of an item on the cross axis
+*/
+
+
+        .flex-container{
+            border: 2px red solid;
+            height: 90vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            /* flex-wrap: wrap; */
+
+        }
+        
+        .flex-item{
+            height: 100px;
+            width: 100px;
+            border: 2px solid blue;
+            background-color: chartreuse;
+            /* margin: 2px; */
+        }
+
+        .item1 {
+            order: 1;
+            /* flex-grow: 3; */
+            /* flex-shrink: 2; */
+        }
+
+        .item2 {
+            order: 2;
+            /* flex-grow: 2; */
+        }
+
+        .item3 {
+            align-self: flex-end;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="flex-container">
+        <div class="flex-item item1">1</div> <!-- Order 2 --> 
+        <div class="flex-item item2">2</div> <!-- Order 0 -->
+        <div class="flex-item item3">3</div> <!-- Order 1 -->
+        <div class="flex-item item4">4</div> <!-- Order 0 -->
+
+        <!-- 1, 2, 4, 3 -->
+
+        <!-- 2, 4, 3, 1 -->
+
+
+
+
+    </div>
+
+</body>
+
+
+</html>

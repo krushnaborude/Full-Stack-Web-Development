@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Forms Demo</title>
+
+    <style>
+        #uname{
+            border: 5px solid red;
+        }
+    </style>
+
+    <script>
+        function process(){
+            var input = document.getElementById("uname");
+            console.log(input.value)
+        }
+    </script>
+</head>
+<body>
+    
+    <form action="/demo">
+
+        <!-- 
+            'name' attribute:
+            We need to provide the 'name' attribute so that the backend (server)
+            can refer to the element and read its value
+
+            'id' attribute:
+            We use the 'id' attribute to identify the element on the client side
+            1) Linking (html)
+            2) Styling (css)
+            3) Scripting (js)
+
+         -->
+        <label id="label1" for="uname">User Name: </label> 
+        <input type="text" name="name" id="uname" placeholder="Enter username" >
+        <br><br>
+
+        <label for="">User Password: </label>
+        <input type="password" name="pass" id="upass" placeholder="Enter password" >
+        <br><br>
+        <button type="submit">Login</button>
+    </form>
+
+    <button onclick="process()">Show info</button>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Position property</title>
+
+    <style>
+
+        .divOne{
+            font-family: cursive;
+            color: blue;
+            background-color: beige;
+            font-size: xx-large;
+            border: red solid 3px;
+            width: 600px;
+
+            /* static is the default value for the position property */
+            /* position: static;  */
+
+            /* relative is with reference to the default position */
+            /* position: relative;
+            left: 50px;
+            top: 60px; */
+
+            /* fixed will not have any space given in the normal flow
+            Even when we scroll, the element position will not change */
+            /* position:fixed;
+            bottom: 0; */
+
+            position:sticky;
+            top: 0;
+
+
+
+
+        }
+
+        .para{
+            background-color: aqua;
+            height: 30px;
+        }
+
+        p {
+            font-size: xx-large;
+        }
+
+
+        .outer{
+            position: relative;
+            border: red solid 2px;
+            height: 300px;
+        }
+
+        .inner{
+            position:absolute;
+            top: 100px;
+            left: 300px;
+            border: blue solid 2px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <p class="para"></p>
+    <div class="divOne">This is div 1</div>
+    <p class="para"></p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus delectus tempore similique at. Exercitationem, quis. Odio quisquam quidem facilis excepturi dolor placeat doloribus nisi officia amet, error quasi! Placeat quis ipsum quaerat facere sunt, quas laboriosam libero animi ad! Qui harum maiores ab distinctio necessitatibus omnis error asperiores repellat culpa laboriosam numquam nesciunt ex aliquam, possimus quasi dignissimos, consequatur quibusdam cupiditate? Amet vitae alias sunt ea dolorum minus, itaque ipsam tenetur maiores harum quasi quo? Eius vero rerum blanditiis sapiente facere dolore molestiae aliquam atque architecto praesentium, aut sequi ex at iste inventore officiis harum iusto, non quas animi. Quasi necessitatibus assumenda sunt, sed illo, harum asperiores quas iure aliquam voluptas quos laboriosam omnis culpa, reprehenderit repudiandae nesciunt amet nulla natus. Alias exercitationem impedit aperiam perspiciatis! Architecto voluptas iste, delectus beatae aliquid ducimus modi. Voluptatum nemo quia omnis repudiandae sequi rerum quasi itaque reiciendis, eaque illo doloribus cumque sint vel officia aspernatur quidem aut esse optio ducimus veniam explicabo, ipsum aperiam illum? Dolorem aperiam minima suscipit neque sapiente doloremque, nam possimus itaque quis veritatis ipsum nesciunt odio voluptatum numquam laudantium voluptates vitae quas sequi minus voluptatem reiciendis sed dignissimos saepe. Voluptates enim quaerat expedita modi eos, corrupti quibusdam culpa esse neque dolor tenetur officia rerum maxime. Magni similique asperiores illum reiciendis quaerat ducimus esse distinctio maxime, dolores exercitationem a eum? Maiores reiciendis exercitationem consectetur libero, fugit pariatur mollitia eius sequi perspiciatis vero eaque totam dignissimos incidunt temporibus et error eos fuga. Quasi, vel culpa rerum illum voluptatibus incidunt excepturi voluptatum nesciunt? Libero iste eligendi natus veniam tenetur perspiciatis eos earum accusantium soluta. Blanditiis accusantium amet facilis voluptates eum debitis, praesentium, consequatur aperiam sequi consequuntur dignissimos voluptatibus cum ducimus. Libero fugiat labore voluptatem quaerat voluptatibus veritatis alias corrupti. Ex quis totam blanditiis fugit dolores accusamus sunt dolorum voluptate, veniam architecto consequuntur eum fugiat dolore consectetur dicta eos? Nostrum rem fuga nulla? Repudiandae accusantium neque quia, ipsa nostrum odit ipsam sequi officia mollitia fugit exercitationem consectetur distinctio eaque molestiae laboriosam facilis sint voluptate unde similique vero? Iusto quidem aperiam impedit pariatur sequi aliquid ea consequuntur accusantium autem quibusdam laudantium deleniti, earum ipsum cumque labore velit veniam nihil mollitia! Excepturi asperiores obcaecati quia praesentium ipsum recusandae totam unde libero voluptatibus perspiciatis? Omnis nisi esse adipisci fugiat provident? Accusantium dolores unde cum nesciunt libero ullam sit, excepturi inventore. Nesciunt ipsum in commodi. Quasi veniam asperiores laborum alias veritatis odio officia eum, corporis excepturi minima!</p>
+
+
+    <div class="outer"> This is outer div
+        <div class="inner">This is inner div</div>
+    </div>
+
+
+</body>
+
+
+</html>

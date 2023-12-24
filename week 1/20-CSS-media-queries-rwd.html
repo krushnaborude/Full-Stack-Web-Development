@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Amit">
+    <meta name="description" content="This is my web site for media queries"
+
+    <title>Media Queries</title>
+
+    <style>
+        .box{
+            background-color: coral;
+            /* height: 40px; */
+            font-size: x-large;
+            border: 1px solid blue;
+        }
+
+        /* Use the media query to apply the css rules accordingly! */
+        @media screen and (min-width: 200px) and (max-width: 400px) {
+            #box1{
+                background-color: greenyellow;
+            }
+            /* div {
+                background-color: greenyellow;
+            } */
+        }
+        </style>
+
+</head>
+<body>
+
+    <h1>Welcome to CSS Media Queries</h1>
+    
+    <div class="box" id="box1">This box will change the color soon...</div>
+    <div class="box" id="box2">This box will not change the color </div>
+
+    
+</body>
+</html>

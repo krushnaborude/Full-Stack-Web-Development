@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+    <form action="/demo">
+    
+        <fieldset>
+        <legend>Select your IPL Team</legend>
+
+        <!-- Option 1 -->
+        <input type="radio" name="team" id="teamcsk" value="CSK">
+        <label for="teamcsk">Chennai Super Kings</label>
+        <br>
+        <!-- Option 2 -->
+        <label>
+            <input type="radio" name="team" id="teammi" value="MI" >
+            Mumbai Indians
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="team" id="teamrcb" value="RCB">
+            Royal Challengers Bangalore
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="team" id="teamgt" value="GT">
+            Gujarat Titans
+        </label>
+        <br>
+       <br>
+        <textarea id="" cols="30" name="teaminfo" rows="10" placeholder="Provide more information about your team"></textarea>
+        <br>
+        <br>
+        <div>
+            <select name="favplayer" id="">
+               <option value="" >Select your player</option>     
+               <option value="VK">Virat Kohli</option> 
+               <option value="RS">Rohit Sharma</option>
+               <option value="MSD">MS Dhoni</option>
+            </select>
+        </div>
+        <br><br>
+
+        <div>
+            <input type="text" list="dl"  name="sponser" >
+            <datalist id="dl">
+                <option>Tata</option>
+                <option>Dream11</option>
+                <option>Zomato</option>
+                <option>Delhi Rice </option>
+                <option>Zee5</option>
+
+            </datalist>
+        </div>
+
+
+        <input type="text" name="aadhar" id="" placeholder="Enter your Aadhar card">
+
+        <button type="submit" >Submit</button>
+
+
+
+    </fieldset>
+
+</form>
+
+</body>
+</html>

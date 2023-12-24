@@ -1,0 +1,49 @@
+<!-- Inform the browser that this is a HTML5 document -->
+<!DOCTYPE html>
+
+<!-- Root element -->
+<html>
+
+<!-- Provide metadata info and title -->
+
+<head>
+    <title>My first page</title>
+
+
+    <script>
+        function togglePassword(){
+            var inputPass = document.getElementById("pwd");
+            var btnPass = document.getElementsByTagName("button")[0];
+
+            if(inputPass.type === "password"){
+                inputPass.type = "text"
+                btnPass.innerText = "Hide Password"
+            } else{
+                inputPass.type = "password"
+                btnPass.innerText = "Show Password"
+            }
+        }
+    </script>
+</head>
+
+<!-- Anything we write in the body element, gets displayed in Browser's Viewport -->
+
+<body>
+
+    <h2>Element Attributes</h2>
+
+    <input type="text"> <br><br>
+    <input type="password" id="pwd"> <button onclick="togglePassword() " >Show Password</button> <br><br>
+    <input type="date"><br><br>
+    <input type="file"><br><br>
+
+    <hr>
+    <a href="https://www.cricbuzz.com" target="_blank">Goto Cricbuzz website</a>
+    
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg/1920px-Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg" alt="" width="500px">
+
+
+    
+</body>
+
+</html>
